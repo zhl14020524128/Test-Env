@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('GetCode') {
       steps {
-        sh 'echo "git pull"'
+        bat 'echo "git pull"'
       }
     }
 
@@ -15,7 +15,7 @@ pipeline {
 
     stage('Test') {
       steps {
-        sh 'echo "Test Project"'
+        bat 'echo "Test Project"'
       }
     }
 
